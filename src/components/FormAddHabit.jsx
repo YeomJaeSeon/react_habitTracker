@@ -9,6 +9,7 @@ const FormAddHabit = memo((props) => {
     const value = inputRef.current.value;
     value && props.onAdd(value);
     formRef.current.reset();
+    inputRef.current.focus();
   };
   console.log('FormAddHabit');
   return (
